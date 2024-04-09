@@ -51,7 +51,7 @@ class HttpRequest {
       };
 
       let result;
-
+      console.info('Sending request to server with:',JSON.stringify( this.data), 'to', this.url, "with base url", this.baseUrl);
       if (this.method.toLowerCase() == "get") {
         result = await axios({
           baseURL: this.baseUrl,
