@@ -95,10 +95,9 @@ class IssueService {
                 ...issuePayload.message.issue,
                 issue_actions: {
                   ...issue.message.issue.issue_actions,
-                  complainant_actions: [
+                  complainant_actions: 
                     issuePayload?.message?.issue.issue_actions
                       ?.complainant_actions,
-                  ],
                 },
               },
             },
